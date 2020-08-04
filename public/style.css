@@ -16,6 +16,12 @@ html, body {
 	margin-bottom: 0;
 	color: white;
 	background-color: #73242A;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/cluckTruckLarger.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+
 }
 /*
 #wrapper {
@@ -104,21 +110,53 @@ html, body {
 }
 .navbar {
 	color: white;
+	background-color: #73242A;
+
 }
 a {
 	background-color: #73242A;
 	color: white;
 
 }
-a:hover{
-	color: #73242A;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
-}
 .nav-link:hover {
-	color: #73242A;
+	color: white;
+	border-bottom: solid white 0.1em;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
 
+.navbar-brand{
+	font-size: 1.5rem;
+}
 
+.navbar-brand:hover {
+	color: white;
+	font-size: 2rem;
+	border-bottom: solid white 0.2rem;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+
+}
+
+#navBarContainer {
+	border-top: solid white 0.2rem;
+}
+
+#cluckTruckImage {
+}
+
+.carousel-item {
+	min-height: 100%;
+	height: 100%;
+	min-height: 300px;
+}
+
+
+@media (max-width: 991px) {
+	.carousel-indicators,
+	.carousel-indicators li {
+		cursor: default;
+		pointer-events: none;
+		display: none;
+	}
+}
